@@ -12,20 +12,18 @@ const App = () => {
     <div className="bg-gray-100">
       <section className=" py-2">
         <div className="container max-w-screen-xl mx-auto px-4">
-          <nav className="flex items-center justify-between mb-40">
+          <nav className="flex items-center justify-between   mb-28">
             <img src={nameLogo} className='   w-16' alt="Logo" />
             <ul className='flex  '>
-              <li className='  px-6 py-2 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'>About</li>
-              <li className='  px-6 py-2  bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'>Projects</li>
-              <li className='  px-6 py-2  bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'>Education</li>
-              <li className= '  px-6 py-2 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'>Contact</li>
-
+              <li className='  px-6 py-2 font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'> <a href="">About</a> </li>
+              <li className='  px-6 py-2  font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500' >  <a href="">Projects</a> </li>
+              <li className='  px-6 py-2  font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'> <a href="">Education</a> </li>
+              <li className= '  px-6 py-2 font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500'><a href="">Contact</a> </li>
+    <div className="animation start-home"></div>
               </ul>
           </nav>
-          <div className="text-center">
-            <div className="flex justify-center mb-16">
-              <img src={abdou} className="w-48 h-100 rounded-full" alt="Image" />
-            </div>
+          <div className="text-center flex">
+            <div className=" ">
             <h6 className="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Abderraouf Khamoum</h6>
             <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Full stack Developer</h1>
             <p className="font-normal text-gray-600 text-md md:text-xl mb-16">
@@ -35,6 +33,10 @@ const App = () => {
               className="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">
               Hire me
             </a>
+            </div>
+            <div className="flex  flex-1 justify-center mb-16   ml-28 ">
+              <img src={abdou} className="    w-[280px]   h-72  rounded-3xl" alt="Image" />
+            </div>
           </div>
         </div>
       </section>
