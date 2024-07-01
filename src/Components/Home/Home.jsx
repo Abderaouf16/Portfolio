@@ -1,9 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import "tailwindcss/tailwind.css";
 import feather from "feather-icons";
 import abdou from "../../assets/images/Abdou.jpg";
 import nameLogo from "../../assets/nameLogo/nameLogo.svg";
+import { annotate,annotationGroup } from 'rough-notation';
+
+
+
+
+
+
 const App = () => {
+
+
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      const a1 = annotate(document.querySelector('#e1'), { type: 'highlight' , color:'#d0bfdc'});
+const a2 = annotate(document.querySelector('#e2'), { type: 'highlight' , color:'#d0bfdc' });
+const a3 = annotate(document.querySelector('#e3'), { type: 'highlight' , color:'#c0b762' });
+const a4 = annotate(document.querySelector('#e4'), { type: 'highlight' , color:'#d4c8b9' });
+const a5 = annotate(document.querySelector('#e5'), { type: 'highlight' , color:'#d0bfdc'});
+const a6 = annotate(document.querySelector('#e6'), { type: 'highlight' , color:'#d0bfdc'});
+const a7 = annotate(document.querySelector('#e7'), { type: 'circle' , color:'#d4c8b9'});
+
+const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
+ag.show();
+    }, 0); // Delay to allow layout to settle
+  }, []);
+  
+
+
   useEffect(() => {
     feather.replace();
   }, []);
@@ -36,32 +62,33 @@ const App = () => {
           <div className=" flex font-rubik  ">
             <div className="flex-1 md:mr-20 ">
               <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl  mb-8">
-                Hello ! I’m Abderraouf, a full stack developer bassed in Algeria
+                Hello ! I’m Abderraouf, a <span id='e1' className='inline-block'  >full stack developer</span>  bassed in Algeria
               </h6>
               <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8"></h1>
               <div className="font-normal text-gray-600 text-md md:text-base mb-16">
                 <p className="mb-2">
-                  I love building tools that are user-friendly, simple and
-                  delightful.
+                  I love building tools that are <span id='e2' className='inline-block'>user-friendly, simple </span> <span> and </span>  
+                  <span id='e3'> delightful</span> .
                 </p>
                 <p className="mb-2">
                   {" "}
-                  My journey of coding started when entering architecture school
+                  My journey of coding started when entering <span id='e4'>architecture</span>  school
                   and working with it softwares made me wonder how they design &
                   built it, This curiosity pushed me to start a career as a
                   full-stask developer.
                 </p>
                 <p className="mb-2">
                   I was a student at Code labs academy School where I spent 10
-                  months learning the fundamentals of front-end and back-end web
-                  development and also the essential skills to succeed in this
+                  months learning the fundamentals of <span id='e5' className='inline-block'>front-end and back-end</span>  web
+                  development and also the <span id='e6' className='inline-block'> flexible skills</span>  to succeed in this
                   field
                 </p>
-                <p className="mb-2">
-                  I'm currently looking for a new role as a developer. Hire me?
+                <p className="mb-2" >
+                  I'm currently looking for a new role as a developer. <span id='e7'>Hire me?</span> 
                 </p>
               </div>
               <a
+              id='e3'
                 href="#"
                 className="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
               >
