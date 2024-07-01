@@ -9,6 +9,9 @@ export default {
       colors: {
         customGray: '#282928',
       },
+      fontFamily:{
+        rubik: ['rubik', 'sans-serif']
+      }
     },
   },
   plugins: [],
