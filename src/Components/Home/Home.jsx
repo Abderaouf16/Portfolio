@@ -60,7 +60,7 @@ ag.show();
             </ul>
           </nav>
           <div className=" flex font-rubik  ">
-            <div className="flex-1 md:mr-20 ">
+            <div className="flex-1 md:mr-20   mr-6">
               <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl  mb-8">
                 Hello ! I’m Abderraouf, a <span id='e1' className='inline-block'  >full stack developer</span>  bassed in Algeria
               </h6>
@@ -80,20 +80,35 @@ ag.show();
                 <p className="mb-2">
                   I was a student at Code labs academy School where I spent 10
                   months learning the fundamentals of <span id='e5' className='inline-block'>front-end and back-end</span>  web
-                  development and also the <span id='e6' className='inline-block'> flexible skills</span>  to succeed in this
+                  development and the <span id='e6' className='inline-block'> flexible skills</span>  to succeed in this
                   field
                 </p>
                 <p className="mb-2" >
-                  I'm currently looking for a new role as a developer. <span id='e7'>Hire me?</span> 
+                  I'm currently looking for a new role as a developer. <span className='inline-block' id='e7'>Hire me?</span> 
                 </p>
               </div>
+              <div className="  ">
+
               <a
-              id='e3'
                 href="#"
-                className="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                className="px-5 mr-6 last:py-3 md:px-9 md:py-4 font-light md:font-normal bg-gray-700 border-2 border-black text-gray-50 text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
               >
-                Hire me
+                 Download CV
+               
               </a>
+              <a
+                href="#"
+                className="px-5 py-2 mr-6  md:px-9 md:py-4 font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+              >
+                 View Github
+              </a>
+              <a
+                href="#"
+                className="inline-block px-5 py-2 md:px-9 md:py-4 font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+              >
+                View LinkedIn
+              </a>
+              </div>
             </div>
             <div className="flex   justify-center mb-16    ">
               <img
