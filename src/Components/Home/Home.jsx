@@ -4,6 +4,8 @@ import feather from "feather-icons";
 import abdou from "../../assets/images/Abdou.jpg";
 import nameLogo from "../../assets/nameLogo/nameLogo.svg";
 import { annotate,annotationGroup } from 'rough-notation';
+import githubIcon from '../../assets/icons/github.svg'
+import linkedinIcon from "../../assets/icons/linkedin.svg"
 
 
 
@@ -61,7 +63,7 @@ ag.show();
           </nav>
           <div className=" flex font-rubik  ">
             <div className="flex-1 md:mr-20   mr-6">
-              <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl  mb-8">
+              <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl ">
                 Hello ! I’m Abderraouf, a <span id='e1' className='inline-block'  >full stack developer</span>  bassed in Algeria
               </h6>
               <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8"></h1>
@@ -87,26 +89,29 @@ ag.show();
                   I'm currently looking for a new role as a developer. <span className='inline-block' id='e7'>Hire me?</span> 
                 </p>
               </div>
-              <div className="  ">
+              <div className="  w-full  h-auto">
 
               <a
                 href="#"
-                className="px-5 mr-6 last:py-3 md:px-9 md:py-4 font-light md:font-normal bg-gray-700 border-2 border-black text-gray-50 text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
               >
                  Download CV
                
               </a>
-              <a
-                href="#"
-                className="px-5 py-2 mr-6  md:px-9 md:py-4 font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                            <a
+                href="https://github.com/Abderaouf16"
+                className="  text-center inline-block px-5 py-3 mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
               >
                  View Github
+                 <img src={githubIcon} className='w-5 inline ml-3' alt="" />
               </a>
               <a
-                href="#"
-                className="inline-block px-5 py-2 md:px-9 md:py-4 font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
+                className="inline-block px-5 py-3 md:px-8 md:py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
               >
                 View LinkedIn
+                <img src={linkedinIcon} className='w-5 inline ml-3' alt="" />
+
               </a>
               </div>
             </div>
