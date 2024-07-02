@@ -6,7 +6,7 @@ import nameLogo from "../../assets/nameLogo/nameLogo.svg";
 import { annotate,annotationGroup } from 'rough-notation';
 import githubIcon from '../../assets/icons/github.svg'
 import linkedinIcon from "../../assets/icons/linkedin.svg"
-
+import cv from '../../assets/CV/khamoum abderraouf.pdf'
 
 
 
@@ -92,7 +92,8 @@ ag.show();
               <div className="  w-full  h-auto">
 
               <a
-                href="#"
+                href={cv}
+                 Download='Khamoum Abderraouf CV'
                 className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
               >
                  Download CV
@@ -100,7 +101,7 @@ ag.show();
               </a>
                             <a
                 href="https://github.com/Abderaouf16"
-                className="  text-center inline-block px-5 py-3 mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                className="  text-center inline-block my-3 px-5 py-3 md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
               >
                  View Github
                  <img src={githubIcon} className='w-5 inline ml-3' alt="" />
@@ -126,16 +127,15 @@ ag.show();
         </div>
       </section>
 
-      <section className="py-10 md:py-16">
+      <section className=" font-rubik py-10 md:py-16">
         <div className="container max-w-screen-xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between">
+          <div className="  lg:flex-row justify-between">
             <div className="mb-10 lg:mb-0">
-              <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+              <h1 className="font-medium text-gray-700 text-3xl md:text-3xl mb-3">
                 Projects & Experience
               </h1>
               <p className="font-normal text-gray-500 text-xs md:text-base">
-                I have brought here my biggest and favorite works <br /> as a
-                professional.
+                Some of the side projects I'm currently working on.
               </p>
             </div>
             <div className="space-y-24">
