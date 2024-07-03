@@ -3,117 +3,188 @@ import "tailwindcss/tailwind.css";
 import feather from "feather-icons";
 import abdou from "../../assets/images/Abdou.jpg";
 import nameLogo from "../../assets/nameLogo/nameLogo.svg";
-import { annotate,annotationGroup } from 'rough-notation';
-import githubIcon from '../../assets/icons/github.svg'
-import linkedinIcon from "../../assets/icons/linkedin.svg"
-import cv from '../../assets/CV/khamoum abderraouf.pdf'
-
-
-
-
+import { annotate, annotationGroup } from "rough-notation";
+import githubIcon from "../../assets/icons/github.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
+import cv from "../../assets/CV/khamoum abderraouf.pdf";
+import { Element } from 'react-scroll';
+import { Link } from 'react-scroll';
+import Headroom from "react-headroom";
+import '../css/Home.css'
 
 const App = () => {
-
-
   useLayoutEffect(() => {
     setTimeout(() => {
-      const a1 = annotate(document.querySelector('#e1'), { type: 'highlight' , color:'#d0bfdc'});
-const a2 = annotate(document.querySelector('#e2'), { type: 'highlight' , color:'#d0bfdc' });
-const a3 = annotate(document.querySelector('#e3'), { type: 'highlight' , color:'#c0b762' });
-const a4 = annotate(document.querySelector('#e4'), { type: 'highlight' , color:'#d4c8b9' });
-const a5 = annotate(document.querySelector('#e5'), { type: 'highlight' , color:'#d0bfdc'});
-const a6 = annotate(document.querySelector('#e6'), { type: 'highlight' , color:'#d0bfdc'});
-const a7 = annotate(document.querySelector('#e7'), { type: 'circle' , color:'#d4c8b9'});
+      const a1 = annotate(document.querySelector("#e1"), {
+        type: "highlight",
+        color: "#d0bfdc",
+      });
+      const a2 = annotate(document.querySelector("#e2"), {
+        type: "highlight",
+        color: "#d0bfdc",
+      });
+      const a3 = annotate(document.querySelector("#e3"), {
+        type: "highlight",
+        color: "#c0b762",
+      });
+      const a4 = annotate(document.querySelector("#e4"), {
+        type: "highlight",
+        color: "#d4c8b9",
+      });
+      const a5 = annotate(document.querySelector("#e5"), {
+        type: "highlight",
+        color: "#d0bfdc",
+      });
+      const a6 = annotate(document.querySelector("#e6"), {
+        type: "highlight",
+        color: "#d0bfdc",
+      });
+      const a7 = annotate(document.querySelector("#e7"), {
+        type: "circle",
+        color: "#d4c8b9",
+      });
 
-const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
-ag.show();
+      const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
+      ag.show();
     }, 0); // Delay to allow layout to settle
   }, []);
-  
-
 
   useEffect(() => {
     feather.replace();
   }, []);
 
   return (
-    <div className="bg-gray-100   px-4 md:px-24 xl:px-56 ">
-      <section className=" py-2 ">
-        <div className="container max-w-screen-xl mx-auto  ">
-          <nav className="flex items-center justify-between   mb-28">
-            <img src={nameLogo} className="   w-16" alt="Logo" />
-            <ul className="flex  ">
-              <li className="  px-6 py-2 font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-                {" "}
-                <a href="">About</a>{" "}
+    <div className="bg-white   px-4 md:px-24 xl:px-56 ">
+    <nav className=" flex  z-50 sticky  top-5 w-full rounded-[100px] px-3 py-2  flex items-center justify-between">
+            <img src={nameLogo} className=" flex justify-center items-center  w-10" alt="Logo" />
+            <ul className="flex">
+        <li className="bg-white rounded-[100px] text-center px-6 py-3 font-medium text-black text-[13px] flex items-center justify-center">
+                
+              <Link
+            activeClass="active"
+            to="aboutMe"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+          >
+            About me
+          </Link>
               </li>
-              <li className="  px-6 py-2  font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-                {" "}
-                <a href="">Projects</a>{" "}
+              <li className="bg-white rounded-[100px] text-center px-6 py-3 ml-2 font-medium text-black text-[13px] flex items-center justify-center">
+                    <Link
+            activeClass="active"
+            to="Projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+          >
+            Projects
+          </Link>
               </li>
-              <li className="  px-6 py-2  font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-                {" "}
-                <a href="">Education</a>{" "}
+              <li className="bg-white rounded-[100px] text-center px-6 py-3 mx-2 font-medium text-black text-[13px] flex items-center justify-center">
+                      <Link
+            activeClass="active"
+            to="Education"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+          >
+            Education
+          </Link>
+            
               </li>
-              <li className="  px-6 py-2 font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">
-                <a href="">Contact</a>{" "}
+              <li className="bg-white rounded-[100px] text-center px-6 py-3 font-medium text-black text-[13px] flex items-center justify-center">
+                        <Link
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+          >
+            Contact
+          </Link>
               </li>
               <div className="animation start-home"></div>
             </ul>
           </nav>
+      <section className="   w-full py-2 ">
+       
+          
+          <div className="container max-w-screen-xl mx-auto  mt-28 ">
+          <Element name="aboutMe">
           <div className=" flex font-rubik  ">
             <div className="flex-1 md:mr-20   mr-6">
               <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl ">
-                Hello ! I’m Abderraouf, a <span id='e1' className='inline-block'  >full stack developer</span>  bassed in Algeria
+                Hello ! I’m Abderraouf, a{" "}
+                <span id="e1" className="inline-block">
+                  full stack developer
+                </span>{" "}
+                bassed in Algeria
               </h6>
               <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8"></h1>
               <div className="font-normal text-gray-600 text-md md:text-base mb-16">
                 <p className="mb-2">
-                  I love building tools that are <span id='e2' className='inline-block'>user-friendly, simple </span> <span> and </span>  
-                  <span id='e3'> delightful</span> .
+                  I love building tools that are{" "}
+                  <span id="e2" className="inline-block">
+                    user-friendly, simple{" "}
+                  </span>{" "}
+                  <span> and </span>
+                  <span id="e3"> delightful</span> .
                 </p>
                 <p className="mb-2">
                   {" "}
-                  My journey of coding started when entering <span id='e4'>architecture</span>  school
-                  and working with it softwares made me wonder how they design &
-                  built it, This curiosity pushed me to start a career as a
-                  full-stask developer.
+                  My journey of coding started when entering{" "}
+                  <span id="e4">architecture</span> school and working with it
+                  softwares made me wonder how they design & built it, This
+                  curiosity pushed me to start a career as a full-stask
+                  developer.
                 </p>
                 <p className="mb-2">
                   I was a student at Code labs academy School where I spent 10
-                  months learning the fundamentals of <span id='e5' className='inline-block'>front-end and back-end</span>  web
-                  development and the <span id='e6' className='inline-block'> flexible skills</span>  to succeed in this
-                  field
+                  months learning the fundamentals of{" "}
+                  <span id="e5" className="inline-block">
+                    front-end and back-end
+                  </span>{" "}
+                  web development and the{" "}
+                  <span id="e6" className="inline-block">
+                    {" "}
+                    flexible skills
+                  </span>{" "}
+                  to succeed in this field
                 </p>
-                <p className="mb-2" >
-                  I'm currently looking for a new role as a developer. <span className='inline-block' id='e7'>Hire me?</span> 
+                <p className="mb-2">
+                  I'm currently looking for a new role as a developer.{" "}
+                  <span className="inline-block" id="e7">
+                    Hire me?
+                  </span>
                 </p>
               </div>
               <div className="  w-full  h-auto">
-
-              <a
-                href={cv}
-                 Download='Khamoum Abderraouf CV'
-                className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
-              >
-                 Download CV
-               
-              </a>
-                            <a
-                href="https://github.com/Abderaouf16"
-                className="  text-center inline-block my-3 px-5 py-3 md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
-              >
-                 View Github
-                 <img src={githubIcon} className='w-5 inline ml-3' alt="" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
-                className="inline-block px-5 py-3 md:px-8 md:py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
-              >
-                View LinkedIn
-                <img src={linkedinIcon} className='w-5 inline ml-3' alt="" />
-
-              </a>
+                <a
+                  href={cv}
+                  Download="Khamoum Abderraouf CV"
+                  className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
+                >
+                  Download CV
+                </a>
+                <a
+                  href="https://github.com/Abderaouf16"
+                  className="  text-center inline-block my-3 px-5 py-3 md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                >
+                  View Github
+                  <img src={githubIcon} className="w-5 inline ml-3" alt="" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
+                  className="inline-block px-5 py-3 md:px-8 md:py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                >
+                  View LinkedIn
+                  <img src={linkedinIcon} className="w-5 inline ml-3" alt="" />
+                </a>
               </div>
             </div>
             <div className="flex   justify-center mb-16    ">
@@ -124,9 +195,10 @@ ag.show();
               />
             </div>
           </div>
+          </Element>
         </div>
       </section>
-
+      <Element name="Projects">
       <section className=" font-rubik py-10 md:py-16">
         <div className="container max-w-screen-xl mx-auto px-4">
           <div className="  lg:flex-row justify-between">
@@ -191,7 +263,8 @@ ag.show();
           </div>
         </div>
       </section>
-
+      </Element>
+      <Element name="Education">
       <section className="py-10 md:py-16">
         <div className="container max-w-screen-xl mx-auto px-4">
           <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
@@ -269,7 +342,7 @@ ag.show();
           </div>
         </div>
       </section>
-
+      </Element>
       <section className="py-10 md:py-16">
         <div className="container max-w-screen-xl mx-auto px-4">
           <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
