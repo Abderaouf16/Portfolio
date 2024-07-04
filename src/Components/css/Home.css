@@ -9,5 +9,9 @@ nav{
     background-color: rgba(232, 229, 228, 0.5);
 }
 nav li {
-    
+
 }
+.activeBtn {
+    background-color: white;
+    color: red; /* Change this to the color you want */
+  }
