@@ -15,3 +15,16 @@ nav li {
     background-color: white;
     color: red; /* Change this to the color you want */
   }
+  
+
+  @media (min-width: 768px) and (max-width: 850px) {
+    .myImage {
+      display: none;
+    }
+  }
+  @media (min-width: 850px) and (max-width: 1024px) {
+    .myImage {
+      width: 240px;
+      height: 245px;
+    }
+  }

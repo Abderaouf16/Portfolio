@@ -11,6 +11,9 @@ export default {
       },
       fontFamily:{
         rubik: ['rubik', 'sans-serif']
+      },
+      screens: {
+        'max-768px' : { 'max': '768px'}
       }
     },
   },

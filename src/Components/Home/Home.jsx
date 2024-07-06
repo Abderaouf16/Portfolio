@@ -120,9 +120,9 @@ const App = () => {
       <Element name="aboutMe">
         <section className=" w-full pt-2 ">
           <div className="container max-w-screen-xl mx-auto  mt-28 ">
-            <div className=" flex font-rubik  ">
+            <div className=" flex  font-rubik  ">
               <div className="flex-1 md:mr-20   mr-6">
-                <h6 className=" font-rubik font-extrabold text-gray-600 text-lg md:text-3xl ">
+                <h6 className=" font-rubik font-extrabold text-gray-600 text-2xl  lg:text-3xl ">
                   Hello ! I’m Abderraouf, a{" "}
                   <span id="e1" className="inline-block">
                     full stack developer
@@ -130,7 +130,7 @@ const App = () => {
                   bassed in Algeria
                 </h6>
                 <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8"></h1>
-                <div className="font-normal text-gray-600 text-md md:text-base mb-16">
+                <div className="font-normal text-gray-600 text-sm  lg:text-base mb-16">
                   <p className="mb-2">
                     I love building tools that are{" "}
                     <span id="e2" className="inline-block">
@@ -177,14 +177,14 @@ const App = () => {
                   </a>
                   <a
                     href="https://github.com/Abderaouf16"
-                    className="  text-center inline-block my-3 px-5 py-3 md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                    className="  max-768px:mx-4 text-center inline-block my-3 px-5 py-[10px] md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
                   >
                     View Github
-                    <img src={githubIcon} className="w-5 inline ml-3" alt="" />
+                    <img src={githubIcon} className=" w-5 inline ml-3" alt="" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
-                    className="inline-block px-5 py-3 md:px-8 md:py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                    className="inline-block px-5 py-3 md:px-8 py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
                   >
                     View LinkedIn
                     <img
@@ -195,10 +195,10 @@ const App = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex   justify-center mb-16    ">
+              <div className="flex  max-768px:hidden   justify-center mb-16    ">
                 <img
                   src={abdou}
-                  className="    w-[280px]   h-72  rounded-3xl"
+                  className="myImage  lg:w-[280px] lg:h-72  rounded-3xl"
                   alt="Image"
                 />
               </div>
