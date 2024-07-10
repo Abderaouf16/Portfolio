@@ -407,7 +407,7 @@ const App = () => {
           <div className="container max-w-screen-xl mx-auto px-4">
             <div className="flex flex-col  justify-center  items-center ">
              <p className='workTogether font-semibold py-4 text-4xl md:text-5xl lg:text-6xl '>Let's work together.</p>
-             <p className='social font-semibold pb-4 text-3xl md:text-4xl lg:text-5xl '>Get in touch.</p>
+             <p className='social inTouch font-semibold pb-4 text-3xl md:text-4xl lg:text-5xl '>Get in touch.</p>
             </div>
             
           </div>
