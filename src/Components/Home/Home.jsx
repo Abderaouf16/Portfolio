@@ -6,6 +6,7 @@ import nameLogo from "../../assets/nameLogo/nameLogo.svg";
 import { annotate, annotationGroup } from "rough-notation";
 import githubIcon from "../../assets/icons/github.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
+import coryRightIcon from "../../assets/icons/copyright.svg"
 import cv from "../../assets/CV/khamoum abderraouf.pdf";
 import { Element } from "react-scroll";
 import { Link } from "react-scroll";
@@ -61,6 +62,7 @@ const App = () => {
 
 
   return (
+    <>
     <div className="bg-white   px-4 md:px-24 xl:px-56 ">
       <nav className=" flex   z-50 sticky  top-5 w-full rounded-[100px] px-3 py-2  flex items-center justify-between">
         <img
@@ -111,7 +113,8 @@ const App = () => {
             smooth={true}
             offset={-70}
             duration={900}
-            className="cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[13px] flex items-center justify-center"
+            className={`cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[13px] flex items-center justify-center ${activeLink === 'Contact' ? 'activeBtn' : ''}`}
+            onClick={() => handleSetActive('Contact')}  
           >
             Contact
           </Link>
@@ -283,7 +286,7 @@ const App = () => {
               Below is a summary of the places I studied
             </p>
             <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-100 px-8 py-10 rounded-md">
+              <div className=" card bg-gray-100 px-8 py-10 rounded-md">
                 <h4 className="font-medium text-gray-700 text-lg mb-1">
                   BSc in Architectural Engineering & Design
                 </h4>
@@ -300,7 +303,7 @@ const App = () => {
                   mathematics, and the history of architecture.
                 </p>
               </div>
-              <div className="bg-gray-100 px-8 py-10 rounded-md">
+              <div className="card bg-gray-100 px-8 py-10 rounded-md">
                 <h4 className="font-medium text-gray-700 text-lg mb-1">
                   Meta Front-End Developer
                 </h4>
@@ -314,7 +317,7 @@ const App = () => {
                   and web development in general.
                 </p>
               </div>
-              <div className="bg-gray-100 px-8 py-10 rounded-md">
+              <div className=" card bg-gray-100 px-8 py-10 rounded-md">
                 <h4 className="font-medium text-gray-700 text-lg mb-1">
                   Web development Bootcamp
                 </h4>
@@ -397,7 +400,38 @@ const App = () => {
           </div>
         </div>
       </section>
+      <Element name="Contact">
+      <section className="  mt-24 pt-10 md:pt-16">
+        <div className="container max-w-screen-xl mx-auto px-4">
+
+          <div className="container max-w-screen-xl mx-auto px-4">
+            <div className="flex flex-col  justify-center  items-center ">
+             <p className='workTogether font-semibold py-4 text-4xl md:text-5xl lg:text-6xl '>Let's work together.</p>
+             <p className='social font-semibold pb-4 text-3xl md:text-4xl lg:text-5xl '>Get in touch.</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      </Element>
     </div>
+    <div className="flex  my-8  mx-11 justify-between items-center mt-64">
+
+            <div className="brand flex items-center font-medium text-black text-sm">
+            <img className='cursor-pointer flex justify-center items-center  w-10' src={nameLogo} alt="" />
+            <img src={coryRightIcon}  className='w-3 ml-3  mr-2' alt="" />
+            <p>Khamoum Abderraouf 2024</p>
+          </div>
+
+          <div className="socials flex justify-center items-center font-medium text-black text-sm ">
+            <a className='social'  href="https://www.instagram.com/abdou.khmm/">Instagram</a>
+            <a  className=' social px-3' href=" https://www.linkedin.com/in/abderaouf-khamoum-657527260/">LinkedIn</a>
+            <a className='social' href="">Mail</a>
+          </div>
+          
+
+            </div>
+    </>
   );
 };
 
