@@ -7,6 +7,7 @@ import { annotate, annotationGroup } from "rough-notation";
 import githubIcon from "../../assets/icons/github.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import coryRightIcon from "../../assets/icons/copyright.svg";
+import bars from "../../assets/icons/bars-solid.svg";
 import cv from "../../assets/CV/khamoum abderraouf.pdf";
 import { Element } from "react-scroll";
 import { Link } from "react-scroll";
@@ -60,6 +61,12 @@ const App = () => {
     setActiveLink(link);
   };
 
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  function toggleMobileMenu() {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  }
+
   return (
     <>
       <div className="bg-white   px-4 md:px-24 xl:px-56 ">
@@ -69,7 +76,11 @@ const App = () => {
             className=" cursor-pointer flex justify-center items-center  w-10"
             alt="Logo"
           />
-          <div className="flex">
+          <div
+            className={`navLinks ${
+              isMobileMenuOpen ? "mobileView" : ""
+            }  flex  `}
+          >
             <Link
               to="aboutMe"
               spy={true}
@@ -126,10 +137,18 @@ const App = () => {
               Contact
             </Link>
           </div>
+          <div className="humberger">
+            <img
+              src={bars}
+              className="w-6 cursor-pointer cursor-pointer mr-3"
+              onClick={toggleMobileMenu}
+              alt=""
+            />
+          </div>
         </nav>
         <Element name="aboutMe">
-          <section className=" w-full pt-2 ">
-            <div className="container max-w-screen-xl mx-auto  my-32  ">
+          <section id="aboutMe" className=" w-full pt-2 ">
+            <div className=" max-w-screen-xl mx-auto   px-4 my-32  ">
               <div className=" flex  font-rubik  ">
                 <div className="flex-1 md:mr-20   mr-6">
                   <h6 className=" font-rubik font-extrabold text-gray-600 text-2xl  lg:text-3xl ">
@@ -417,8 +436,8 @@ const App = () => {
           <section className="  mt-24 pt-10 md:pt-16">
             <div className="container max-w-screen-xl mx-auto px-4">
               <div className="container max-w-screen-xl mx-auto px-4">
-                <div className="flex flex-col  justify-center  items-center ">
-                  <p className="workTogether font-semibold py-4 text-4xl md:text-5xl lg:text-6xl ">
+                <div className="flex flex-col  justify-center  items-center  text-center ">
+                  <p className="workTogether  inline-block font-semibold py-4 text-4xl md:text-5xl lg:text-6xl ">
                     Let's work together.
                   </p>
                   <a
@@ -433,7 +452,7 @@ const App = () => {
           </section>
         </Element>
       </div>
-      <div className="flex font-rubik my-8  mx-11 justify-between items-center mt-64">
+      <div className="flex footer font-rubik my-8  mx-11 justify-between items-center mt-64">
         <div className="brand flex items-center font-medium text-black text-sm">
           <img
             className="cursor-pointer flex justify-center items-center  w-10"

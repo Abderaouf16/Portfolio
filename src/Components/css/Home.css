@@ -1,39 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    backdrop-filter: blur(16px);
-    background-color: rgba(232, 229, 228, 0.5);
+nav {
+  backdrop-filter: blur(16px);
+  background-color: rgba(232, 229, 228, 0.5);
 }
-.card:hover{
-    backdrop-filter: blur(16px);
-    background-color: rgba(232, 229, 228, 0.5);
+
+.card:hover {
+  backdrop-filter: blur(16px);
+  background-color: rgba(232, 229, 228, 0.5);
 }
 .activeBtn {
-    background-color: white;
-    color: red; /* Change this to the color you want */
-  }
-  
-  .inTouch{
-    color: rgba(110,110,110,1);
+  background-color: white;
+  color: red; /* Change this to the color you want */
+}
 
-  }
-  .social:hover{
-    color: rgba(211,211,211,1);
+.inTouch {
+  color: rgba(110, 110, 110, 1);
+}
+.social:hover {
+  color: rgba(211, 211, 211, 1);
+}
 
+.humberger {
+  display: none;
+}
+@media (max-width: 600px) {
+  .navLinks {
+    backdrop-filter: blur(16px);
+    background-color: rgba(232, 229, 228, 1);
+    position: absolute;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s ease-in-out;
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 1000;
+    opacity: 0;
   }
-  @media (min-width: 768px) and (max-width: 850px) {
-    .myImage {
-      display: none;
-    }
+  .navLinks.mobileView {
+    opacity: 1;
   }
-  @media (min-width: 850px) and (max-width: 1024px) {
-    .myImage {
-      width: 240px;
-      height: 245px;
-    }
-    
+
+  .navLinks a {
+    margin: 20px 0px;
   }
+
+  #aboutMe > div:first-child {
+    margin-top: 70px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+
+  .socials {
+    margin: 20px 0px;
+  }
+  .humberger {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .myImage {
+    display: none;
+  }
+}
+@media (min-width: 850px) and (max-width: 1024px) {
+  .myImage {
+    width: 240px;
+    height: 245px;
+  }
+}
