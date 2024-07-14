@@ -39,6 +39,13 @@ import mongodb from "../../assets/icons/mongodb.svg";
 import expressjs from "../../assets/icons/expressjs.svg";
 import nodejs from "../../assets/icons/node-js.svg";
 
+
+import img1 from '../../assets/images/img1.png'
+import img2 from '../../assets/images/img2.png'
+import img3 from '../../assets/images/img3.png'
+
+
+
 import "../css/Home.css";
 
 const App = () => {
@@ -283,7 +290,7 @@ const App = () => {
           <section className=" font-rubik py-10 md:py-16 pt-2">
             <div className="container max-w-screen-xl mx-auto px-4">
               <div className="  lg:flex-row justify-between">
-                <div className="mb-10 lg:mb-0">
+                <div className="mb-10 lg:mb-20">
                   <h1 className="font-medium text-gray-700 text-3xl md:text-3xl mb-3">
                     Projects & Experience
                   </h1>
@@ -291,7 +298,64 @@ const App = () => {
                     Some of the side projects I'm currently working on.
                   </p>
                 </div>
-                <div className="space-y-24">
+                <div className="flex w-full  ">
+                  <div className="grid grid-cols-1 gap-6">
+                      <div className=" flex flex-col lg:flex-row p-6 ">
+                        <div className=" w-full lg:w-9/20 ">
+                          <img src={img1} alt="" />
+                        </div>
+                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
+                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
+                          </ul>
+                          <div className=" mt-10 ">
+                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
+                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className=" flex flex-col lg:flex-row p-6 ">
+                        <div className=" w-full lg:w-9/20 ">
+                          <img src={img2} alt="" />
+                        </div>
+                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
+                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
+                          </ul>
+                          <div className=" mt-10 ">
+                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
+                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div className=" flex flex-col lg:flex-row p-6 ">
+                        <div className=" w-full lg:w-9/20 ">
+                          <img src={img3} alt="" />
+                        </div>
+                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
+                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
+                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
+                          </ul>
+                          <div className=" mt-10 ">
+                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
+                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
+                          </div>
+                        </div>
+                      </div>
+                   
+                  </div>
+                </div>
+                
+                {/* <div className="space-y-24">
                   <div className="flex space-x-6">
                     <h1 className="font-normal text-gray-700 text-3xl md:text-4xl">
                       01
@@ -341,7 +405,7 @@ const App = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
