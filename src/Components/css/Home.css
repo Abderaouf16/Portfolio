@@ -28,6 +28,10 @@ nav {
 .humberger {
   display: none;
 }
+.skill-buble{
+  background-color: rgba(232, 229, 228, 0.7);
+
+}
 @media (max-width: 600px) {
   .navLinks {
     backdrop-filter: blur(16px);
