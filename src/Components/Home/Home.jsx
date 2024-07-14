@@ -39,12 +39,9 @@ import mongodb from "../../assets/icons/mongodb.svg";
 import expressjs from "../../assets/icons/expressjs.svg";
 import nodejs from "../../assets/icons/node-js.svg";
 
-
-import img1 from '../../assets/images/img1.png'
-import img2 from '../../assets/images/img2.png'
-import img3 from '../../assets/images/img3.png'
-
-
+import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
+import img3 from "../../assets/images/img3.png";
 
 import "../css/Home.css";
 
@@ -300,112 +297,151 @@ const App = () => {
                 </div>
                 <div className="flex w-full  ">
                   <div className="grid grid-cols-1 gap-6">
-                      <div className=" flex flex-col lg:flex-row p-6 ">
-                        <div className=" w-full lg:w-9/20 ">
-                          <img src={img1} alt="" />
-                        </div>
-                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
-                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
-                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
-                          </ul>
-                          <div className=" mt-10 ">
-                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
-                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
-                          </div>
+                    <div className=" flex flex-col lg:flex-row p-6 ">
+                      <div className=" w-full lg:w-9/20 ">
+                        <img src={img1} alt="" />
+                      </div>
+                      <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                        <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
+                          Glamour
+                        </h3>
+                        <ul className="max-w-3xl leading-[30px] list-disc ml-4">
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            Submission for Pygames Hackathon hosted by Microsoft
+                          </li>
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            A side-scrolling platform game with a multiverse
+                            heist theme. Players collect items while being
+                            chased, and navigate obstacles to reach the next
+                            levels.
+                          </li>
+                        </ul>
+                        <div className=" mt-10 ">
+                          <button
+                            className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Repo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Demo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Full documentation
+                          </button>
                         </div>
                       </div>
+                    </div>
 
-                      <div className=" flex flex-col lg:flex-row p-6 ">
-                        <div className=" w-full lg:w-9/20 ">
-                          <img src={img2} alt="" />
-                        </div>
-                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
-                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
-                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
-                          </ul>
-                          <div className=" mt-10 ">
-                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
-                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
-                          </div>
+                    <div className=" flex flex-col lg:flex-row p-6 ">
+                      <div className=" w-full lg:w-9/20 ">
+                        <img src={img2} alt="" />
+                      </div>
+                      <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                        <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
+                          Glamour
+                        </h3>
+                        <ul className="max-w-3xl leading-[30px] list-disc ml-4">
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            Submission for Pygames Hackathon hosted by Microsoft
+                          </li>
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            A side-scrolling platform game with a multiverse
+                            heist theme. Players collect items while being
+                            chased, and navigate obstacles to reach the next
+                            levels.
+                          </li>
+                        </ul>
+                        <div className=" mt-10 ">
+                          <button
+                            className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Repo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Demo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Full documentation
+                          </button>
                         </div>
                       </div>
+                    </div>
 
-
-                      <div className=" flex flex-col lg:flex-row p-6 ">
-                        <div className=" w-full lg:w-9/20 ">
-                          <img src={img3} alt="" />
-                        </div>
-                        <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
-                          <h3 className='text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0'>Glamour</h3>
-                          <ul className='max-w-3xl leading-[30px] list-disc ml-4'>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>Submission for Pygames Hackathon hosted by Microsoft</li>
-                            <li className='text-tertiary text-[15px] pl-1 tracking-wider'>A side-scrolling platform game with a multiverse heist theme. Players collect items while being chased, and navigate obstacles to reach the next levels.</li>
-                          </ul>
-                          <div className=" mt-10 ">
-                            <button  className=' text-center text-sm rounded-md inline-block  px-5 py-[10px] md:mx-4 md:px-8 md:py-[10px]  font-light md:font-normal  text-black  ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }} >Repo</button>
-                            <button className=' text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black ' style={{ backgroundColor: 'rgba(232, 229, 228, 0.9)' }}>Full documentation</button>
-                          </div>
+                    <div className=" flex flex-col lg:flex-row p-6 ">
+                      <div className=" w-full lg:w-9/20 ">
+                        <img src={img3} alt="" />
+                      </div>
+                      <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                        <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
+                          Glamour
+                        </h3>
+                        <ul className="max-w-3xl leading-[30px] list-disc ml-4">
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            Submission for Pygames Hackathon hosted by Microsoft
+                          </li>
+                          <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                            A side-scrolling platform game with a multiverse
+                            heist theme. Players collect items while being
+                            chased, and navigate obstacles to reach the next
+                            levels.
+                          </li>
+                        </ul>
+                        <div className=" mt-10 ">
+                          <button
+                            className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Repo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Demo
+                          </button>
+                          <button
+                            className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                            style={{
+                              backgroundColor: "rgba(232, 229, 228, 0.9)",
+                            }}
+                          >
+                            Full documentation
+                          </button>
                         </div>
                       </div>
-                   
+                    </div>
                   </div>
                 </div>
-                
-                {/* <div className="space-y-24">
-                  <div className="flex space-x-6">
-                    <h1 className="font-normal text-gray-700 text-3xl md:text-4xl">
-                      01
-                    </h1>
-                    <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
-                    <div>
-                      <h1 className="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                        Full stack Ecommerce website
-                      </h1>
-                      <p className="font-normal text-gray-500 text-sm md:text-base">
-                        Designed and created a clothing Ecommerce website using
-                        React, Node.js,
-                        <br /> Express, MongoDB, and Stripe payment gateway.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-6">
-                    <h1 className="font-normal text-gray-700 text-3xl md:text-4xl">
-                      02
-                    </h1>
-                    <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
-                    <div>
-                      <h1 className="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                        Restaurant Landing page
-                      </h1>
-                      <p className="font-normal text-gray-500 text-sm md:text-base">
-                        I created a responsive landing page for a Restaurant
-                        using HTML, CSS and JavaScript
-                        <br /> and using React in relation to JavaScript
-                        libraries and frameworks.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex space-x-6">
-                    <h1 className="font-normal text-gray-700 text-3xl md:text-4xl">
-                      03
-                    </h1>
-                    <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
-                    <div>
-                      <h1 className="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                        Graduation Project
-                      </h1>
-                      <p className="font-normal text-gray-500 text-sm md:text-base">
-                        Created a platform for my Architecture school where
-                        students <br /> can save and share their projects with
-                        the community.
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
           </section>
