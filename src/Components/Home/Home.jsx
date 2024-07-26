@@ -8,7 +8,7 @@ import githubIcon from "../../assets/icons/github.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import coryRightIcon from "../../assets/icons/copyright.svg";
 import bars from "../../assets/icons/bars-solid.svg";
-import cv from "../../assets/CV/khamoum abderraouf.pdf";
+import cv from "../../assets/CV/resume_english.pdf";
 import { Element } from "react-scroll";
 import { Link } from "react-scroll";
 import Headroom from "react-headroom";
