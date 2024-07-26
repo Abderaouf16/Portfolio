@@ -39,9 +39,9 @@ import mongodb from "../../assets/icons/mongodb.svg";
 import expressjs from "../../assets/icons/expressjs.svg";
 import nodejs from "../../assets/icons/node-js.svg";
 
-import img1 from "../../assets/images/img1.png";
-import img2 from "../../assets/images/img2.png";
-import img3 from "../../assets/images/img3.png";
+import img1 from "../../assets/images/archi vision.png";
+import img2 from "../../assets/images/glamour.png";
+import img3 from "../../assets/images/little lemon.png";
 
 import "../css/Home.css";
 
@@ -101,7 +101,7 @@ const App = () => {
   return (
     <>
       <div className="bg-white   px-4 md:px-24 xl:px-56 ">
-        <nav className=" flex   z-50 sticky  top-5 w-full rounded-[100px] px-3 py-2  flex items-center justify-between">
+        <nav className=" flex items-center justify-between   z-50 sticky  top-5 w-full rounded-[100px] px-3 py-2  ">
           <img
             src={nameLogo}
             className=" cursor-pointer flex justify-center items-center  w-10"
@@ -298,41 +298,43 @@ const App = () => {
                 <div className="flex w-full  ">
                   <div className="grid grid-cols-1 gap-6">
                     <div className=" flex flex-col lg:flex-row p-6 ">
-                      <div className=" w-full lg:w-9/20 ">
-                        <img src={img1} alt="" />
+                      <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
+                        <img className='' src={img1} alt="" />
                       </div>
                       <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
                         <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
-                          Glamour
+                        Archi Vision <span className='text-base  font-normal px-3 '>(Updating current version)</span>
                         </h3>
                         <ul className="max-w-3xl leading-[30px] list-disc ml-4">
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            Submission for Pygames Hackathon hosted by Microsoft
+                          Technologies: Html, CSS, JavaScript, React, Nodejs, ExpressJS, MongoDB
                           </li>
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            A side-scrolling platform game with a multiverse
-                            heist theme. Players collect items while being
-                            chased, and navigate obstacles to reach the next
-                            levels.
+                          Design and development of a complex web application for architecture department students which allows them to save their study projects
+and contribute them with the community
                           </li>
                         </ul>
                         <div className=" mt-10 ">
-                          <button
+                          <a
+                          href='https://github.com/Abderaouf16/CLA-Graduation-Project'
+                          target="_blank"
                             className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
                             style={{
                               backgroundColor: "rgba(232, 229, 228, 0.9)",
                             }}
                           >
                             Repo
-                          </button>
-                          <button
+                          </a>
+                          <a
+                          href='https://daa-test.vercel.app'
+                          target="_blank"
                             className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
                               backgroundColor: "rgba(232, 229, 228, 0.9)",
                             }}
                           >
                             Demo
-                          </button>
+                          </a>
                           <button
                             className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
@@ -345,26 +347,23 @@ const App = () => {
                       </div>
                     </div>
 
-                    <div className=" flex flex-col lg:flex-row p-6 ">
-                      <div className=" w-full lg:w-9/20 ">
+                    <div className=" flex flex-col lg:flex-row p-6  border-black">
+                      <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
                         <img src={img2} alt="" />
                       </div>
                       <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
                         <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
-                          Glamour
+                          Glamour <span className='text-base  font-normal px-3 '>(currently working on)</span>
                         </h3>
                         <ul className="max-w-3xl leading-[30px] list-disc ml-4">
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            Submission for Pygames Hackathon hosted by Microsoft
-                          </li>
+                          Technologies: Html, CSS, JavaScript, NextJS, ShadcnUI, Nodejs, ExpressJS, MongoDB                          </li>
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            A side-scrolling platform game with a multiverse
-                            heist theme. Players collect items while being
-                            chased, and navigate obstacles to reach the next
-                            levels.
+                           Design and development of a web application that allows users to purchase clothing of their preference
+
                           </li>
                         </ul>
-                        <div className=" mt-10 ">
+                        <div className=" mt-10  ">
                           <button
                             className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
                             style={{
@@ -373,14 +372,17 @@ const App = () => {
                           >
                             Repo
                           </button>
-                          <button
+                          <a
+
+                          href='https://www.figma.com/proto/wnM1o1gLZFgyexxwxDWRyY/Clothing-E-commerce-website?node-id=39-7&t=wuC1h9yfj2TiT5mU-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=39%3A7'
+                          target='_blank'
                             className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
                               backgroundColor: "rgba(232, 229, 228, 0.9)",
                             }}
                           >
                             Demo
-                          </button>
+                          </a>
                           <button
                             className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
@@ -394,41 +396,44 @@ const App = () => {
                     </div>
 
                     <div className=" flex flex-col lg:flex-row p-6 ">
-                      <div className=" w-full lg:w-9/20 ">
+                      <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
                         <img src={img3} alt="" />
                       </div>
                       <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
                         <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
-                          Glamour
+                          Little Lemon
                         </h3>
                         <ul className="max-w-3xl leading-[30px] list-disc ml-4">
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            Submission for Pygames Hackathon hosted by Microsoft
+                          Technologies: Html, CSS, JavaScript, React, ChakraUI
                           </li>
                           <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                            A side-scrolling platform game with a multiverse
-                            heist theme. Players collect items while being
-                            chased, and navigate obstacles to reach the next
-                            levels.
+                          Developed Website Landing Page creating and optimizing content for the website using a variety of graphics, databases, animations and other
+functionality.
                           </li>
                         </ul>
                         <div className=" mt-10 ">
-                          <button
+                          <a
+                           href='https://github.com/Abderaouf16/Coursera-Font-end-capstone-project'
+                           target='_blank'
+                          
                             className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
                             style={{
                               backgroundColor: "rgba(232, 229, 228, 0.9)",
                             }}
                           >
                             Repo
-                          </button>
-                          <button
+                          </a>
+                          <a
+                         href='https://littellemon.vercel.app'
+                         target='_blank'
                             className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
                               backgroundColor: "rgba(232, 229, 228, 0.9)",
                             }}
                           >
                             Demo
-                          </button>
+                          </a>
                           <button
                             className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                             style={{
