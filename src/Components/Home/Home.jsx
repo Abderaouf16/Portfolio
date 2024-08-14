@@ -39,7 +39,7 @@ import mongodb from "../../assets/icons/mongodb.svg";
 import expressjs from "../../assets/icons/expressjs.svg";
 import nodejs from "../../assets/icons/node-js.svg";
 
-import img1 from "../../assets/images/archi vision.png";
+import img1 from "../../assets/images/archivision.png";
 import img2 from "../../assets/images/glamour.png";
 import img3 from "../../assets/images/little lemon.png";
 
