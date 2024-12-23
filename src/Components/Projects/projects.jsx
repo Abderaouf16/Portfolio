@@ -20,8 +20,8 @@ function Projects() {
             </div>
             <div className="flex w-full  ">
               <div className="grid grid-cols-1 gap-6">
-                <div className=" flex flex-col lg:flex-row p-6 ">
-                  <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
+                <div className=" flex flex-col lg:flex-row p-6 pb-16">
+                  <div className=" w-full lg:w-9/20 border-gray-400  ">
                     <img className="" src={img1} alt="" />
                   </div>
                   <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
@@ -76,9 +76,9 @@ function Projects() {
                   </div>
                 </div>
 
-                <div className=" flex flex-col lg:flex-row p-6  border-black">
-                  <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
-                    <img src={img2} alt="" />
+                <div className=" flex flex-col lg:flex-row p-6 pb-16  border-black">
+                  <div className=" w-full lg:w-9/20  ">
+                    <img src={img2} alt=""  className="h-[250px]"/>
                   </div>
                   <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
                     <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
@@ -129,7 +129,7 @@ function Projects() {
                 </div>
 
                 <div className=" flex flex-col lg:flex-row p-6 ">
-                  <div className=" w-full lg:w-9/20 border-gray-400 border-2 ">
+                  <div className=" w-full lg:w-9/20 ">
                     <img src={img3} alt="" />
                   </div>
                   <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">

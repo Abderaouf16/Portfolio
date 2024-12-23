@@ -1,6 +1,8 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 
+
+
 function Education() {
   return (
     <div>
