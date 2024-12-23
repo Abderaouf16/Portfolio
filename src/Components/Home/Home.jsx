@@ -12,7 +12,7 @@ import { Link } from "react-scroll";
 import "../css/Home.css";
 import Education from "../Education/education";
 import Skills from "../Skills/skills";
-import Projects from "../Projects/projects";
+import Projects from "../Projects/parent/projects";
 import AboutMe from "../AboutMe/AboutMe";
 import Contact from "../Contact/Contact";
 import Attributes from "../Attributes/Attributes";
