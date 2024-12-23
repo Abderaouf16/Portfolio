@@ -3,6 +3,8 @@ import React from "react";
 import img1 from "../../assets/images/archivision.png";
 import img2 from "../../assets/images/glamour.png";
 import img3 from "../../assets/images/little lemon.png";
+import img4 from "../../assets/images/archi vision.png";
+
 
 function Projects() {
   return (
@@ -33,19 +35,17 @@ function Projects() {
                     </h3>
                     <ul className="max-w-3xl leading-[30px] list-disc ml-4">
                       <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                        Technologies: Html, CSS, JavaScript, React, Nodejs,
-                        ExpressJS, MongoDB
+                        Technologies: Html, TailwindCSS, JavaScript, NextJS, Supabase.
+                    
                       </li>
                       <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                        Design and development of a complex web application for
-                        architecture department students which allows them to
-                        save their study projects and contribute them with the
-                        community
+                      Archi vision is an online platform that presents creative and innovative architectural projects.
+                       It helps you explore captivating architectural ideas and ignite your passion for architectural excellence.
                       </li>
                     </ul>
                     <div className=" mt-10 ">
-                      <a
-                        href="https://github.com/Abderaouf16/CLA-Graduation-Project"
+                      <a  
+                        href="https://github.com/Abderaouf16/CLA-Graduation-Project-2"
                         target="_blank"
                         className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
                         style={{
@@ -55,7 +55,7 @@ function Projects() {
                         Repo
                       </a>
                       <a
-                        href="https://daa-test.vercel.app"
+                        href="https://archivision.vercel.app/Home"
                         target="_blank"
                         className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
                         style={{
@@ -89,23 +89,22 @@ function Projects() {
                     </h3>
                     <ul className="max-w-3xl leading-[30px] list-disc ml-4">
                       <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                        Technologies: Html, CSS, JavaScript, NextJS, ShadcnUI,
-                        Nodejs, ExpressJS, MongoDB{" "}
+                        Technologies: Firgma {" "}
                       </li>
                       <li className="text-tertiary text-[15px] pl-1 tracking-wider">
-                        Design and development of a web application that allows
-                        users to purchase clothing of their preference
+                        Design and development UX/UI Mockup of a web application that allows
+                        users to purchase clothing of their preference.
                       </li>
                     </ul>
                     <div className=" mt-10  ">
-                      <button
+                     {/*  <button
                         className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
                         style={{
                           backgroundColor: "rgba(232, 229, 228, 0.9)",
                         }}
                       >
                         Repo
-                      </button>
+                      </button> */}
                       <a
                         href="https://www.figma.com/proto/wnM1o1gLZFgyexxwxDWRyY/Clothing-E-commerce-website?node-id=39-7&t=wuC1h9yfj2TiT5mU-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=39%3A7"
                         target="_blank"
@@ -128,7 +127,7 @@ function Projects() {
                   </div>
                 </div>
 
-                <div className=" flex flex-col lg:flex-row p-6 ">
+                <div className=" flex flex-col lg:flex-row p-6 pb-16">
                   <div className=" w-full lg:w-9/20 ">
                     <img src={img3} alt="" />
                   </div>
@@ -178,6 +177,65 @@ function Projects() {
                     </div>
                   </div>
                 </div>
+
+
+                <div className=" flex flex-col lg:flex-row p-6   border-black">
+                  <div className=" w-full lg:w-9/20  ">
+                    <img src={img4} alt=""  className=""/>
+                  </div>
+                  <div className="w-full lg:w-11/20 flex flex-col px-4 md:pl-8 ">
+                    <h3 className="text-xl font-semibold mb-2 text-secondary mt-2 md:mt-0 lg:mt-0">
+                      Archi World{" "}
+                      <span className="text-base  font-normal px-3 ">
+                        (Bootcamp graduation project)
+                      </span>
+                    </h3>
+                    <ul className="max-w-3xl leading-[30px] list-disc ml-4">
+                      <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                        Technologies: Html, CSS, JavaScript, ReactJs,
+                        Nodejs, ExpressJS, MongoDB{" "}
+                      </li>
+                      <li className="text-tertiary text-[15px] pl-1 tracking-wider">
+                      Design and development of a complex web application for
+                        architecture department students which allows them to
+                        save their study projects and contribute them with the
+                        community.
+                      </li>
+                    </ul>
+                    <div className=" mt-10  ">
+                    <a
+                        href="https://github.com/Abderaouf16/CLA-Graduation-Project"
+                        target="_blank"
+                        className=" text-center text-sm rounded-md inline-block  px-5 py-[10px]  md:px-8 md:py-[10px]  font-light md:font-normal  text-black  "
+                        style={{
+                          backgroundColor: "rgba(232, 229, 228, 0.9)",
+                        }}
+                      >
+                        Repo
+                      </a>
+                      <a
+                        href=""
+                        target="_blank"
+                        className="  text-center text-sm rounded-md inline-block  px-5 py-[10px]  mx-4  md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                        style={{
+                          backgroundColor: "rgba(232, 229, 228, 0.9)",
+                        }}
+                      >
+                        Demo
+                      </a>
+                      <button
+                        className="  text-center text-sm rounded-md inline-block mt-3 px-5 py-[10px] md:px-8 md:py-[10px]  font-light md:font-normal  text-black "
+                        style={{
+                          backgroundColor: "rgba(232, 229, 228, 0.9)",
+                        }}
+                      >
+                        Full documentation
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>
